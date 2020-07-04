@@ -27,7 +27,7 @@ class LyricBg extends Component{
         p.draw = () => {
             p.background(255);
             let vol = mic.getLevel();
-            p.fill(100, p.constrain(vol*p.width, 0, 255), 100);
+            p.fill(100, p.constrain(vol*p.width, 0, 255), 200);
             p.ellipse(p.width / 2, p.height / 2, p.map(vol, 0, 1, 0, p.width));
             let i = 225;
             let cloud = (this.state.wordCloud.length !== 0 && (this.state.wordCloud !== "Loading...") && this.state.wordCloud !=="Oops! Something Went Wrong.")?this.state.wordCloud:[]
