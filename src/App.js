@@ -25,7 +25,7 @@ class App extends React.Component {
     this.setState({
       status: "Loading..."
     })
-    fetch('http://127.0.0.1:9000/scrape/' + this.state.songname)
+    fetch('http://127.0.0.1:5000/' + this.state.songname)
     .then(
       response => response.json()
     )
