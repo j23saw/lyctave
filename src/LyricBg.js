@@ -33,7 +33,7 @@ class LyricBg extends Component{
             let cloud = (this.state.wordCloud.length !== 0 && (this.state.wordCloud !== "Loading...") && this.state.wordCloud !=="Oops! Something Went Wrong.")?this.state.wordCloud:[]
             cloud.forEach(element => {
                 p.textSize(20)
-                p.text(element, p.windowWidth/2, i)
+                p.text(element, p.mouseX, i)
                 i += 20
             });
             
